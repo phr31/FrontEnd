@@ -11,6 +11,7 @@
 body {
     min-height: 100vh;
     justify-content: center;
+    background-color: rgb(29, 30, 34);
 }
 
 header{
@@ -41,7 +42,7 @@ nav a{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 5vw);
-    grid-gap: 15px;
+    grid-gap: 20px;
 }
 
 .gallery .gallery_item img{
