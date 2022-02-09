@@ -1,0 +1,235 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+html,body {
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  font-family: 'Spartan', sans-serif;
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,p {
+  margin: 0;
+}
+
+body {
+    background: url('../images/bg-pattern-top-desktop.svg') no-repeat top left, 
+                url('../images/bg-pattern-bottom-desktop.svg') no-repeat bottom right;
+    background-size: auto, auto;
+}
+
+.info{
+    display: flex;
+    margin-top: 120px;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+.info_esquerda{
+    width: 100%;
+    max-width: 425px;
+}
+
+.info_titulo{
+    margin-bottom: 10px;
+    color: hsl(300, 43%, 22%);
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.info_abaixo{
+    color: hsl(303, 10%, 53%);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.info_direita{
+    display: grid;
+    grid-template-columns: 50px 50px auto 50px 50px;
+    grid-row-gap: 20px;
+}
+
+.info_rate{
+    display: flex;
+    padding: 20px 30px;
+    width: 100%;
+    height: 60px;
+    max-width: 445px;
+    align-items: center;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 5px;
+    animation: 1s bounceLeftRight 0s ease-in-out alternate infinite;
+}
+
+.info_rate:first-child{
+    grid-column: 1 / 4;
+}
+.info_rate:nth-child(2){
+    grid-column: 2 / 5;
+    animation-delay: 100ms;
+}
+
+.info_rate:last-child{
+    grid-column: 3 / 6;
+    animation-delay: 200ms;
+}
+
+.info_rate-box{
+    display:block;
+    width: 100px;
+    height: 100%;
+    background: url('../images/icon-star.svg') space center
+}
+
+.info_etiqueta{
+    margin-left: 30px;
+    background-color: hsl(300, 24%, 96%);
+    color: hsl(300, 43%, 22%);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.comentario{
+    display: grid;
+    margin-top: 70px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 20px 20px auto 20px 20px;
+    grid-column-gap: 30px;
+}
+
+.comentarios_clientes{
+    padding: 30px;
+    max-width: 350px;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.comentarios_clientes:first-child{
+    grid-row: 1 / 4;
+}
+
+.comentarios_clientes:nth-child(2){
+    grid-row: 2 / 5;
+}
+
+.comentarios_clientes:last-child{
+    grid-row: 3 / 6;
+}
+
+.comentarios_clientes:hover{
+    transform: translateY(-20px);
+}
+
+.comentario_info{
+    display: flex;
+    align-items: center;
+}
+
+.comentario_avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.comentario_usuario{
+    font-size: 13px;
+    margin-bottom: 5px;
+    color: hsl(0, 0%, 100%);
+}
+
+.comentario_usuario-verif{
+    font-size: 13px;
+    color: hsl(333, 80%, 67%);
+}
+
+.comentario_texto{
+    margin-top: 30px;
+    color: hsl(0, 0%, 100%);
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.attribution {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    transform: translateX(-50%);
+}
+
+.attribution  a {
+    color: hsl(333, 80%, 67%);
+    font-weight: bold;
+}
+
+@keyframes bounceLeftRight{
+    from{transform: translateX(-10px);}
+    to{transform: translateX(10px);}
+}
+     
+@media only screen and (max-width: 1200px) {
+    .container {max-width: 990px;}
+}
+
+@media only screen and (max-width: 992px) and (min-width: 769px) {
+    .container {max-width: 760px;}
+    .info_esquerda {max-width: 350px;}
+    .info_titulo {font-size: 34px;}
+    .info_direita {grid-template-columns: 30px 30px auto 30px 30px;}
+    .info_rate {
+      padding: 10px 20px;
+      height: 40px;
+    }
+    .info_etiqueta {
+      margin-left: 20px;
+      font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+      max-width: 425px;
+    }
+    .info {
+      display: block;
+      margin-top: 80px;
+    }
+    .info_esquerda {
+      margin: auto;
+      text-align: center;
+    }
+    .info__titulo {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    .info_direita {
+      display: block;
+      margin-top: 30px;
+    }
+    .info_rate{
+      margin: auto;
+      margin-bottom: 20px;
+    }
+    .comentario {
+      display: block;
+    }
+    .comentarios_clientes {
+      margin: auto;
+      margin-bottom: 30px;
+      max-width: 100%;
+    }
+  }
