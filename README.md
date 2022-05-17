@@ -12,7 +12,7 @@ Repository to codes in HTML, CSS and JS used for studying purposes
 ## Summary
 
 #### Formulario 
-- Creation of a login screem in CSS;
+- Creation of a login screen in CSS;
 
 #### Header 
 - Effects treatments in CSS;
