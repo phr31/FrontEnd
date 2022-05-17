@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Design preview for the Social proof section coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Social proof section coding challenge](https://github.com/phr31/FrontEnd/blob/Formulario/social-proof-section-master/Capturar.JPG)
 
 ### Links
 
