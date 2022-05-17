@@ -1,6 +1,6 @@
 # FrontEnd
 
-Repository for codes in HTML, CSS and JS used for studying purposes
+Repository to codes in HTML, CSS and JS used for studying purposes
 
 
 ## References
