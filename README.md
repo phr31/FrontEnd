@@ -12,14 +12,13 @@ Repository for codes in HTML, CSS and JS used for studying purposes
 ## Summary
 
 #### Formulario 
-- Criação de formulario
+- Creation of a login screem in CSS;
 
 #### Header 
-- Effects treatments in CSS
+- Effects treatments in CSS;
 
 #### exercicios-js
-- Code display in class watching [Curso Web Moderno Completo com JavaScript 2022 + Projetos](https://www.udemy.com/course/curso-web/) in udemy
+- Code display in class watching [Curso Web Moderno Completo com JavaScript 2022 + Projetos](https://www.udemy.com/course/curso-web/) in udemy;
 
 #### social-proof-section-master
-- Challenge displayed in [Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA) for test my layout skills using CSS
-
+- Challenge displayed in [Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA) for test my layout skills using CSS.
